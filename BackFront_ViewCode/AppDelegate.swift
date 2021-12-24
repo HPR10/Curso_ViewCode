@@ -5,6 +5,8 @@
 //  Created by Hugo Pinheiro on 24/12/21.
 //
 
+// MARK: - o appDelegate é o responsável pelo ciclo de vida e congiguração do aplicativo
+
 import UIKit
 
 @main
