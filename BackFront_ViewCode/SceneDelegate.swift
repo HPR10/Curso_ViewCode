@@ -13,9 +13,6 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    
-
-    
 // MARK: - Criando uma nova UIwindow e difinindo o controlador de visualização root e tornar a window a janela principal a ser exibida.
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
