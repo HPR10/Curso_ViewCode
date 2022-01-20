@@ -148,10 +148,8 @@ class LoginScreen: UIView {
             self.lblLogin.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             
             self.logoAppImageView.topAnchor.constraint(equalTo: lblLogin.bottomAnchor, constant: 20),
-            
             self.logoAppImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 60),
             self.logoAppImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -60),
-            
             self.logoAppImageView.heightAnchor.constraint(equalToConstant: 200),
             
             self.emailTextField.topAnchor.constraint(equalTo: logoAppImageView.bottomAnchor, constant: 30),

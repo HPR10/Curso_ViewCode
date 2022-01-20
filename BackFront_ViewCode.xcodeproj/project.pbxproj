@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		472723062798E4680082E9F6 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472723052798E4680082E9F6 /* RegisterVC.swift */; };
+		472723082798FD6B0082E9F6 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472723072798FD6B0082E9F6 /* RegisterScreen.swift */; };
 		47C4BD9A2776154A00950DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C4BD992776154A00950DFE /* AppDelegate.swift */; };
 		47C4BD9C2776154A00950DFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C4BD9B2776154A00950DFE /* SceneDelegate.swift */; };
 		47C4BD9E2776154A00950DFE /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C4BD9D2776154A00950DFE /* LoginVC.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		472723052798E4680082E9F6 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		472723072798FD6B0082E9F6 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		47C4BD962776154A00950DFE /* BackFront_ViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackFront_ViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C4BD992776154A00950DFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47C4BD9B2776154A00950DFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		472723032798E3E90082E9F6 /* Scrren */ = {
 			isa = PBXGroup;
 			children = (
+				472723072798FD6B0082E9F6 /* RegisterScreen.swift */,
 			);
 			path = Scrren;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472723082798FD6B0082E9F6 /* RegisterScreen.swift in Sources */,
 				47C4BD9E2776154A00950DFE /* LoginVC.swift in Sources */,
 				47C4BDE7277636CB00950DFE /* LoginScreen.swift in Sources */,
 				47C4BD9A2776154A00950DFE /* AppDelegate.swift in Sources */,
