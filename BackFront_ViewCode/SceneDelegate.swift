@@ -15,27 +15,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 // MARK: - Criando uma nova UIwindow e difinindo o controlador de visualização root e tornar a window a janela principal a ser exibida.
     
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        
-        let window = UIWindow(windowScene: windowScene)
-        let vc: ViewController = ViewController()
-        let navVc = UINavigationController(rootViewController: vc)
-        window.rootViewController = navVc
-        window.makeKeyAndVisible()
-        self.window = window
-        
-        
-        /* DevPoli método
-        let safeWindow = UIWindow(windowScene: windowScene)
-        safeWindow.frame = UIScreen.main.bounds
-        safeWindow.rootViewController = ViewController()
-        safeWindow.makeKeyAndVisible()
-        window = safeWindow
-        */
-         
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.windowScene = windowScene
+        let VC = LoginVC()
+        let navVc = UINavigationController(rootViewController: VC)
+        self.window?.rootViewController = navVc
+        self.window?.makeKeyAndVisible()
     }
+         
+}
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
@@ -66,5 +57,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
-}
+
 

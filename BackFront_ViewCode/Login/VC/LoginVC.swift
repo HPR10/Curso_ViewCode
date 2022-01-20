@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
     
     var loginScreen: LoginScreen?
     
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         self.view = self.loginScreen
     }
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loginScreen?.delegate(delegate: self)
@@ -29,7 +28,7 @@ class ViewController: UIViewController {
 }
 
 // Assina o método do clique no retorne do teclado no ios e faz o teclado descer ápos o retorne.
-extension ViewController: UITextFieldDelegate {
+extension LoginVC: UITextFieldDelegate {
     
     // some com o teclado ao clicar em retorne no teclado
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -48,15 +47,15 @@ extension ViewController: UITextFieldDelegate {
 }
 
 
-extension ViewController: LoginScreenProtocol {
+extension LoginVC: LoginScreenProtocol {
     func actionLoginButton() {
         print("Deu certo login button")
     }
     
     func actionRegisterButton() {
         print("Deu certo Register button")
+        let vc: RegisterVC = RegisterVC()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
 }
 
