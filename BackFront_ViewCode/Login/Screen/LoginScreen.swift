@@ -14,13 +14,13 @@ protocol LoginScreenProtocol: AnyObject {
 
 class LoginScreen: UIView {
     
- private weak var delegate: LoginScreenProtocol?
+    private weak var delegate: LoginScreenProtocol?
     
     func delegate(delegate: LoginScreenProtocol?) {
         self.delegate = delegate
     }
-
-// MARK: - Elementos de interface
+    
+    // MARK: - Elementos de interface
     
     lazy var lblLogin: UILabel = {
         let label = UILabel()
@@ -72,7 +72,7 @@ class LoginScreen: UIView {
         login.setTitleColor(.white, for: .normal)
         login.clipsToBounds = true
         login.layer.cornerRadius = 7.5
-        login.backgroundColor = .darkGray
+        login.backgroundColor = UIColor(red: 3/255, green: 58/255, blue: 51/255, alpha: 1.0)
         login.addTarget(self, action: #selector(tappedLoginButton), for: .touchUpInside)
         return login
     }()
@@ -90,7 +90,7 @@ class LoginScreen: UIView {
     
     
     
-// MARK: - Método Construtor
+    // MARK: - Método Construtor
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -134,8 +134,8 @@ class LoginScreen: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-
-// MARK: - Definindo constrants
+    
+    // MARK: - Definindo constrants
     
     // equalTo: basear em determinado elemento
     // Constant: Aproximar/afastar do elemento referente(equalTo)
@@ -161,7 +161,7 @@ class LoginScreen: UIView {
             self.passwordkTextField.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
             self.passwordkTextField.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
             self.passwordkTextField.heightAnchor.constraint(equalTo: self.emailTextField.heightAnchor),
-        
+            
             self.loginButton.topAnchor.constraint(equalTo: passwordkTextField.bottomAnchor, constant: 25),
             self.loginButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
             self.loginButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
@@ -172,7 +172,7 @@ class LoginScreen: UIView {
             self.RegisterButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
             self.RegisterButton.heightAnchor.constraint(equalTo: self.emailTextField.heightAnchor),
             
-        
+            
         ])
     }
     

@@ -12,19 +12,19 @@ class LoginVC: UIViewController {
     var loginScreen: LoginScreen?
     
     
-// MARK: - Ciclo de vida
+    // MARK: - Ciclo de vida
     
     override func loadView() {
         self.loginScreen = LoginScreen()
         self.view = self.loginScreen
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loginScreen?.delegate(delegate: self)
         self.loginScreen?.configureTextFieldelegate(delegate: self)
     }
-
+    
 }
 
 // Assina o método do clique no retorne do teclado no ios e faz o teclado descer ápos o retorne.
@@ -53,7 +53,7 @@ extension LoginVC: LoginScreenProtocol {
     }
     
     func actionRegisterButton() {
-        print("Deu certo Register button")
+        //print("Deu certo Register button")
         let vc: RegisterVC = RegisterVC()
         self.navigationController?.pushViewController(vc, animated: true)
     }
