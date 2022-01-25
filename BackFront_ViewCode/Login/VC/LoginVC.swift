@@ -29,7 +29,6 @@ class LoginVC: UIViewController {
 
 // Assina o método do clique no retorne do teclado no ios e faz o teclado descer ápos o retorne.
 extension LoginVC: UITextFieldDelegate {
-    
     // some com o teclado ao clicar em retorne no teclado
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -43,9 +42,9 @@ extension LoginVC: UITextFieldDelegate {
     // Desce o teclado ao clicar em algum delegate.
     func textFieldDidEndEditing(_ textField: UITextField) {
         print("textFieldDidEndEditing")
+        self.loginScreen?.validateTextField()
     }
 }
-
 
 extension LoginVC: LoginScreenProtocol {
     func actionLoginButton() {
