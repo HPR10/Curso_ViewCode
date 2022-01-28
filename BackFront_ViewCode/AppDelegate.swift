@@ -8,6 +8,7 @@
 // MARK: - o appDelegate é o responsável pelo ciclo de vida e congiguração do aplicativo
 
 import UIKit
+import SnapKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
